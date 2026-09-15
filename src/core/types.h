@@ -19,4 +19,8 @@ namespace stock_exchange::core{
     using Timestamp = std::uint64_t; // we will be using two clocks - one is the wall clock (which measures upto nanoseconds)and the other is the logical clock (which is a simple counter that increments with each event). we will be using the logical clock for ordering events and the wall clock for measuring time intervals.
 
     using ParticipantId = std::uint32_t;
+
+    using MatchID = std::uint64_t;
+
+    inline constexpr Price PRICE_SCALE = 10'000;
 }

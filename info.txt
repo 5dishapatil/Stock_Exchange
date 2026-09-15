@@ -1,0 +1,5 @@
+for compiling use the command: one time
+cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -S . -B build
+
+for building use the command: afterwards for updation
+ninja -C build

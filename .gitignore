@@ -1,0 +1,60 @@
+# Prerequisites & Build Directories
+build/
+build*/
+cmake-build-*/
+out/
+bin/
+
+# CMake Generated Files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Ninja Generated Files
+.ninja_*
+*.ninja
+build.ninja
+.ninja_deps
+.ninja_log
+
+# Compiled Object Files and Libraries
+*.o
+*.obj
+*.lib
+*.a
+*.so
+*.dylib
+*.dll
+
+# Executables & Debug Symbols
+*.exe
+*.out
+*.app
+*.pdb
+*.ilk
+*.idb
+
+# IDE & Editor Specific Files
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.sln
+*.vcxproj*
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs & Temporary Files
+*.log
+tmp/
+

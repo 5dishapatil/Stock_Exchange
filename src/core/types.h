@@ -23,4 +23,29 @@ namespace stock_exchange::core{
     using MatchID = std::uint64_t;
 
     inline constexpr Price PRICE_SCALE = 10'000;
+
+    enum class Side : std::uint8_t{
+        BUY,
+        SELL
+    };
+
+    enum class OrderType : std::uint8_t{
+        LIMIT,
+        MARKET,
+        IOC,
+        FOK,
+        GTC,
+        STOP,
+        STOP_LIMIT,
+        ICEBERG,
+        POST_ONLY,
+    };
+
+    enum class OrderStatus : std::uint8_t{
+        NEW,
+        ACCEPTED,
+        PARTIALLY_FILLED,
+        FILLED,
+        CANCELED,
+    };
 }
